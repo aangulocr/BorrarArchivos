@@ -1,0 +1,26 @@
+¿Cómo lo usas?
+Desde tu consola en la PC del profesor:
+
+cmd
+EjecutarRemoto.bat XX-XX-XX-XX-XX-XX
+¿Qué verás en pantalla?
+Localización: Verás el escaneo rápido de red hasta encontrar la IP del estudiante.
+Ejecución Directa: Verás en tiempo real los mensajes que genera el archivo LimpiarArchivosRecientes.ps1 (por ejemplo: "Borrando archivos temporales de UsuarioX...", "Limpieza completada").
+Reporte de Error: Si el archivo no existe en la PC remota o hay un problema de red, el script te lo dirá claramente en color rojo.
+Requisito Importante para "Ver la Salida":
+Para que Windows te permita enviarle la salida de texto desde la PC del estudiante a la tuya, las máquinas deben tener habilitado el PowerShell Remoting. Como administrador, puedes habilitarlo en todo el laboratorio de una vez con una GPO (Group Policy) o ejecutando este comando una única vez en las PC de los estudiantes: Enable-PSRemoting -Force
+
+Resumen de tus herramientas actuales:
+
+Transferir.bat: Manda los archivos silenciosamente.
+EjecutarRemoto.bat: Ejecuta la limpieza y te muestra el reporte en tu pantalla.
+EjecutarLimpieza.bat y LimpiarArchivosRecientes.ps1: El motor de limpieza.
+
+
+
+Resumen de tus herramientas actuales:
+
+Transferir.bat: Manda los archivos silenciosamente.
+EjecutarRemoto.bat: Ejecuta la limpieza y te muestra el reporte en tu pantalla.
+EjecutarLimpieza.bat y LimpiarArchivosRecientes.ps1: El motor de limpieza.
+
